@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 px-6 py-8 md:px-12 flex justify-between items-center mix-blend-difference text-white">
       <div className="text-2xl font-black tracking-tighter uppercase">
-        CLUB ITALALIA
+        CLUB ITALIA
       </div>
 
       <div className="hidden md:flex space-x-8 text-[10px] uppercase tracking-[0.3em] font-bold">
@@ -63,22 +63,38 @@ const Hero = () => {
           LUXE
         </h1>
 
-        <div className="grid md:grid-cols-2 gap-12 border-t border-white/10 pt-12">
-          <div className="text-[10px] uppercase tracking-[0.4em] font-bold text-white/40">The CLUB ITALIA CARD</div>
-          <div className="max-w-xl text-lg md:text-xl text-white/70 leading-relaxed font-light space-y-4">
-            <p>
-              Crafted in cold metal, designed for the elite, A passport to privilege where value and luxury meet.
-              It begins at just two-nine-nine, but it will not wait, For like a rising stock, the market dictates our rate.
-            </p>
-            <p>
-              As our network widens and exclusive doors unlock, The price climbs higher, ticking just like a clock.
-              Vendors gain champions; you gain the throne, Priority access in a league of your own.
-            </p>
-            <p>
-              An asset, not a fee, resting in your hand, Connecting the finest stores across the land.
-              Invest in your lifestyle before the surge takes flight, Own the card that grows in worth, starting tonight.
-            </p>
+        <div className="grid md:grid-cols-2 gap-12 border-t border-white/10 pt-12 items-center">
+          <div className="space-y-8">
+            <div className="text-[10px] uppercase tracking-[0.4em] font-bold text-white/40">The CLUB ITALIA CARD</div>
+            <div className="max-w-xl text-lg md:text-xl text-white/70 leading-relaxed font-light space-y-4">
+              <p>
+                Crafted in cold metal, designed for the elite, A passport to privilege where value and luxury meet.
+                It begins at just two-nine-nine, but it will not wait, For like a rising stock, the market dictates our rate.
+              </p>
+              <p>
+                As our network widens and exclusive doors unlock, The price climbs higher, ticking just like a clock.
+                Vendors gain champions; you gain the throne, Priority access in a league of your own.
+              </p>
+              <p>
+                An asset, not a fee, resting in your hand, Connecting the finest stores across the land.
+                Invest in your lifestyle before the surge takes flight, Own the card that grows in worth, starting tonight.
+              </p>
+            </div>
           </div>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="relative"
+          >
+            <motion.img
+              src="/club_italia_card.png"
+              alt="Club Italia Elite Card"
+              className="w-full rounded-2xl shadow-[0_20px_50px_rgba(255,255,255,0.05)] border border-white/10"
+              whileHover={{ scale: 1.05, rotateY: -10 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            />
+          </motion.div>
         </div>
       </motion.div>
 
@@ -241,7 +257,7 @@ const Portfolio = () => {
       title: "NUTRA PHARM",
       category: "HEALTH CENTRES",
       location: "SAIBABA COLONY",
-      image: "https://images.unsplash.com/photo-1631217816660-ad353da59b81?q=80&w=2070&auto=format&fit=crop"
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=2070&auto=format&fit=crop"
     },
     {
       title: "URBAN LADDER",
@@ -262,8 +278,8 @@ const Portfolio = () => {
       <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
         <div>
           <div className="text-[10px] uppercase tracking-[0.4em] font-black text-white/40 mb-4">LATEST PROJECTS</div>
-          <h2 className="text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none">
-            CRAFTING <br />EXCLUSIVE <br />SPACES
+          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">
+            Crafting exclusive sales - <br />Our exclusive collaborations
           </h2>
         </div>
         <div className="max-w-sm text-right">
@@ -442,7 +458,7 @@ const Contact = () => {
 
 const Footer = () => (
   <footer className="py-12 px-6 md:px-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 bg-[#0a0a0a]">
-    <div className="text-[10px] tracking-[0.3em] uppercase font-black">© 2025 CLUB ITALALIA — ELITE NETWORK</div>
+    <div className="text-[10px] tracking-[0.3em] uppercase font-black">© 2025 CLUB ITALIA — ELITE NETWORK</div>
     <div className="flex space-x-12 text-[10px] tracking-[0.3em] uppercase font-black opacity-50">
       <a href="#" className="hover:text-white transition-colors">Instagram</a>
       <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
