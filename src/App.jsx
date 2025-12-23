@@ -457,14 +457,31 @@ const Contact = () => {
 };
 
 const Footer = () => (
-  <footer className="py-12 px-6 md:px-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-8 bg-[#0a0a0a]">
-    <div className="text-[10px] tracking-[0.3em] uppercase font-black">© 2025 CLUB ITALIA — ELITE NETWORK</div>
-    <div className="flex space-x-12 text-[10px] tracking-[0.3em] uppercase font-black opacity-50">
-      <a href="#" className="hover:text-white transition-colors">Instagram</a>
-      <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
-    </div>
-    <div className="text-white/20 text-[10px] tracking-[0.3em] uppercase font-black">
-      LONDON — PARIS — COIMBATORE — NEW YORK
+  <footer className="py-24 px-6 md:px-12 border-t border-white/10 bg-[#0a0a0a]">
+    <div className="flex flex-col md:flex-row justify-between items-start gap-12">
+      <div className="space-y-6">
+        <div className="text-[10px] tracking-[0.3em] uppercase font-black">© 2025 CLUB ITALIA — ELITE NETWORK</div>
+        <div className="text-white/40 text-[10px] tracking-[0.3em] uppercase font-black">
+          LONDON — PARIS — COIMBATORE — NEW YORK
+        </div>
+      </div>
+
+      <div className="flex flex-col space-y-4">
+        <div className="text-[10px] tracking-[0.3em] uppercase font-black text-white/30 mb-2">CONTACT US</div>
+        <div className="flex flex-col space-y-2 text-sm font-medium tracking-tight">
+          <a href="tel:+919578775169" className="hover:text-white/60 transition-colors">95787 75169</a>
+          <a href="tel:+917094657101" className="hover:text-white/60 transition-colors">70946 57101</a>
+          <a href="tel:+919500609858" className="hover:text-white/60 transition-colors">95006 09858</a>
+        </div>
+      </div>
+
+      <div className="flex flex-col space-y-4">
+        <div className="text-[10px] tracking-[0.3em] uppercase font-black text-white/30 mb-2">SOCIAL</div>
+        <div className="flex space-x-12 text-[10px] tracking-[0.3em] uppercase font-black opacity-50">
+          <a href="https://www.instagram.com/the.club.italia?igsh=MWFibzA4MG5ucWpqdw==" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
+          <a href="https://www.linkedin.com/in/club-italia-507934386?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
+        </div>
+      </div>
     </div>
   </footer>
 );
